@@ -15,7 +15,7 @@ nvidia-docker run -v /mnt/SA5_v1share/:/workspace/ -it --ipc host --name (your_n
 nvidia-docker start ()-caffe
 nvidia-docker attach ()-caffe
 ```
-4. [Download](https://developer.nvidia.com/cuda-90-download-archive) and Install CUDA 9.0 (sh cuda_9.0.176_384.81_linux.run), and Do Not Install NVIDIA Accelerated Graphics Driver (first choice)
+4. [Download](https://developer.nvidia.com/cuda-90-download-archive) and Install CUDA 9.0 (sh cuda_9.0.176_384.81_linux.run), Do Not Install NVIDIA Accelerated Graphics Driver (first choice)
 5. Add these to bashrc, and source it
 ```
 export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
