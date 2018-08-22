@@ -1,7 +1,7 @@
 # Installation-of-Caffe-in-DGX
 Installation instructions of Caffe
 
-## Installation of CUDA 9.0 & docker dontainer use
+## Docker dontainer usage & Installation of CUDA 9.0
 1. Show the images on DGX sever
 ```
 nvidia-docker images
