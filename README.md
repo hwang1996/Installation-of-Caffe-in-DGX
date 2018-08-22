@@ -2,9 +2,19 @@
 Installation instructions of Caffe
 
 ## Installation of CUDA 9.0 & docker dontainer use
-1. nvidia-docker images
-2. nvidia-docker run -v /mnt/SA5_v1share/:/workspace/ -it --ipc host --name (your_name)-caffe (image_name)
-3. nvidia-docker start ()-caffe, nvidia-docker attach ()-caffe
+1. Show the images on DGX sever
+```
+nvidia-docker images
+```
+2. Map the local floder to the container you choose
+```
+nvidia-docker run -v /mnt/SA5_v1share/:/workspace/ -it --ipc host --name (your_name)-caffe (image_name)
+```
+3. Start and connect back to previously created container
+```
+nvidia-docker start ()-caffe
+nvidia-docker attach ()-caffe
+```
 4. [Download](https://developer.nvidia.com/cuda-90-download-archive) and Install CUDA 9.0 (sh cuda_9.0.176_384.81_linux.run), and Do Not Install NVIDIA Accelerated Graphics Driver (first choice)
 5. Add these to bashrc, and source it
 ```
