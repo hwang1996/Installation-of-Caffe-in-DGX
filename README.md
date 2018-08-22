@@ -27,7 +27,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda9.0/lib64:$LD_LIBRARY_PATH
 ## Installation of cuDNN for CUDA 9.0
 1. [Download](https://developer.nvidia.com/rdp/cudnn-download) first
 2. Decompress the file
-3. In the bash
+3. In the bash command
 ```
 cd cuda/include
 cp cudnn.h /usr/local/cuda/include
@@ -116,4 +116,4 @@ make all -j
 make test -j
 make runtest -j
 ```
-(About cuDNN, Check failed: status == CUDNN_STATUS_SUCCESS (4 vs. 0)  CUDNN_STATUS_INTERNAL_ERROR)
+(About cuDNN, Check failed: status == CUDNN_STATUS_SUCCESS (4 vs. 0)  CUDNN_STATUS_INTERNAL_ERROR, remains unsolved)
