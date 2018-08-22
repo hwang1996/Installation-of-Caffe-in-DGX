@@ -6,7 +6,7 @@ Installation instructions of Caffe
 ```
 nvidia-docker images
 ```
-2. Map the local floder to the container you choose
+2. Map the local folder to the container you choose
 ```
 nvidia-docker run -v /mnt/SA5_v1share/:/workspace/ -it --ipc host --name (your_name)-caffe (image_name)
 ```
