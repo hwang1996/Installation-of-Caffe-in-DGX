@@ -36,8 +36,17 @@ cd cuda/lib64
 cp lib* /usr/local/cuda/lib64/    
 cd /usr/local/cuda/lib64/
 rm -rf libcudnn.so libcudnn.so.7     
-ln -s libcudnn.so.7.2.1 libcudnn.so.7  
+ln -s libcudnn.so.7.0.5 libcudnn.so.7  
 ln -s libcudnn.so.7 libcudnn.so
+sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+```
+4. Install the runtime library
+```
+dpkg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb
+```
+5. Install the developer library
+```
+dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb
 ```
 ## Installation of NCCL
 ```
