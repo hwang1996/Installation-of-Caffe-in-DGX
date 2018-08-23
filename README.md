@@ -125,4 +125,3 @@ make all -j
 make test -j
 make runtest -j
 ```
-(About cuDNN, Check failed: status == CUDNN_STATUS_SUCCESS (4 vs. 0)  CUDNN_STATUS_INTERNAL_ERROR, remains unsolved)
